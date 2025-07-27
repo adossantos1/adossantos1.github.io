@@ -1,0 +1,150 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  background: #4694A7;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(to right, #7F869B , #D6D6D2);
+  color: white;
+  padding: 1em 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 140px;
+  margin-right: 10px;
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+nav a {
+  color: black;
+  margin-left: 1em;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+nav a:hover {
+  color: #4694A7;
+}
+
+.hero {
+  padding: 4em 2em;
+  background: linear-gradient(to right, #CCBB21 , #BF6018);
+  text-align: center;
+  color: white;
+  animation: fadeIn 2s ease-in;
+}
+
+.hero button {
+  margin-top: 1em;
+  padding: 0.7em 1.5em;
+  border: none;
+  background: #fff;
+  color: #004080;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s ease;
+}
+
+.hero button:hover {
+  background: #ffcc00;
+}
+
+section {
+  padding: 3em 2em;
+}
+
+.cards {
+  display: flex;
+  gap: 1em;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: #2C6AC1;
+  padding: 1.5em;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 250px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+form input, form textarea {
+  padding: 0.7em;
+  margin-bottom: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background: #004080;
+  color: white;
+  padding: 0.7em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #003366;
+}
+
+footer {
+  text-align: center;
+  padding: 1em;
+  background: #004080;
+  color: #4694A7;
+
+
+  margin-top: 2em;
+}
+
+/* Aplica a toda la página  Footer features... para que quede abajo*/
+body {
+  min-height: 100vh; /* altura mínima: 100% de la ventana */
+  display: flex;
+  flex-direction: column;
+}
+
+/* El contenido principal se expande */
+main {
+  flex: 1;
+}
+
+
+
+
+
+/* Animación */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
